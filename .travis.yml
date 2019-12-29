@@ -6,4 +6,4 @@ before_install:
   - docker build  -t george/test-repo -f Dockerfile.dev .
 
 script:
-  - docker run george/test-repo nmp run test -- --coverage
+  - docker run george/test-repo npm run test -- --coverage
